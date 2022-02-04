@@ -37,7 +37,6 @@ app.include_router(user.router)
 app.include_router(auth.router)
 app.include_router(vote.router)
 
-#@app.get("/")
-@app.get("/", response_model=List[PostOut])
+@app.get("/")
 def root():
     return {"message": "Welcome to my API"}

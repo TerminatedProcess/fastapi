@@ -1,0 +1,7 @@
+Host ec2-34-230-110-100.compute-1.amazonaws.com
+Database d4mel87621155v
+User agnujczkmfsvjd
+Port 5432
+Password 47e69206633e819e90c496f9b1d8c9f6e1c62861ffd046cf0a52cf9f617dd069
+URI postgres://agnujczkmfsvjd:47e69206633e819e90c496f9b1d8c9f6e1c62861ffd046cf0a52cf9f617dd069@ec2-34-230-110-100.compute-1.amazonaws.com:5432/d4mel87621155v
+Heroku CLI heroku pg:psql postgresql-symmetrical-71198 --app fastapi-mryan
