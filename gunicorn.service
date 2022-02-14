@@ -6,9 +6,9 @@ After=network.target
 User=mryan
 Group=mryan
 WorkingDirectory=/home/mryan/app/src/
-Environment="PATH=/home/mryan/app/src/.venv/bin"
-EnvironmentFile=home/mryan/app/src/.env
-ExecStart=/home/mryan/app/src/.venv/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000
+Environment="PATH=/home/mryan/app/venv/bin"
+EnvironmentFile=/home/mryan/app/src/.env
+ExecStart=/home/mryan/app/venv/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000
 
 [Install]
 WantedBy=multi-user.target
